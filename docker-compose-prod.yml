@@ -33,7 +33,7 @@ services:
     build: ./nginx
     image: nginx_server_image
     ports:
-      - "80:80"
+      - "5900:80"
     volumes:
       - react_server:/var/www/html
     depends_on:
