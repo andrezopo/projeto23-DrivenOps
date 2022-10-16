@@ -6,7 +6,7 @@ services:
     ports:
       - "6555:5432"
     env_file:
-      - ./back-end/.env
+      - ./back-end/.env.prod
     volumes:
       - drivenops-database:/var/lib/postgres/data
 
@@ -19,7 +19,7 @@ services:
     depends_on:
       - drivenops_db
     env_file:
-      - ./back-end/.env
+      - ./back-end/.env.prod
 
   drivenops_react_app:
     container_name: drivenops_react_app
