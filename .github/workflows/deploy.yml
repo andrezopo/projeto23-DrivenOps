@@ -27,7 +27,7 @@ jobs:
           directory: front-end/
           file-name: .env.prod
           fail-on-empty: true
-      - name: Build process
+      - name: Build process 2
         run: docker-compose -f docker-compose-prod.yml build
       - name: Run application
         run: docker-compose -f docker-compose-prod.yml down && docker-compose -f docker-compose-prod.yml up -d
