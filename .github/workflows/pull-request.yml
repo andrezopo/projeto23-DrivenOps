@@ -13,7 +13,7 @@ jobs:
           envkey_POSTGRES_PASSWORD: "postgres"
           envkey_POSTGRES_DATABASE: "students_test"
           envkey_DATABASE_URL: "postgres://postgres:postgres@drivenops_test_db:5432/students_test"
-          repository: ./back-end
+          directory: back-end/
           file_name: .env.test
       - name: Update container and run tests
         run: docker-compose -f ./back-end/docker-compose-test.yml run node_app npm run test
